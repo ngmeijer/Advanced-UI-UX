@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e466886277c3014a8079e8f464e2fec, type: 3}
+  m_Name: Week5
+  m_EditorClassIdentifier: 
+  SchoolWeekNumber: 5
+  YearWeekNumber: 50
+  weekDays:
+  - {fileID: 11400000, guid: f1df42695e4ce8f4ab1b8b97ecd6a219, type: 2}
+  - {fileID: 11400000, guid: 55ed03f0236833c439299fe4b9054047, type: 2}
+  - {fileID: 11400000, guid: e9232f85d53fa1f42a8d272c2fac9a99, type: 2}
+  - {fileID: 11400000, guid: 58b26c6a190a15745b4639cf798d78e6, type: 2}
+  - {fileID: 11400000, guid: 25518056b8413c94380742cf72af3419, type: 2}
