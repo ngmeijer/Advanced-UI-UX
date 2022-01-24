@@ -13,23 +13,7 @@ public class ScheduleManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI schoolWeekText;
 
     [SerializeField] private UpdateDay[] dayInstances;
-    
-    public List<string> timeStamps = new List<string>();
-    public static List<float> VerticalPositions = new List<float>();
 
-    private static ScheduleManager _instance;
-    public static ScheduleManager Instance { get { return _instance; } }
-
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        } else {
-            _instance = this;
-        }
-    }
-    
     private void Start()
     {
         updateWeekData();
