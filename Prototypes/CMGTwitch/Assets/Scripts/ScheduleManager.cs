@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScheduleManager : MonoBehaviour
 {
@@ -13,10 +14,17 @@ public class ScheduleManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI schoolWeekText;
 
     [SerializeField] private UpdateDay[] dayInstances;
+    [SerializeField] private Image todaysBackground;
+    private Color orange;
+    private Color grey;
+    private float alpha;
 
     private void Start()
     {
         updateWeekData();
+        ColorUtility.TryParseHtmlString("#FD8726", out orange);
+        ColorUtility.TryParseHtmlString("#1F1F1F", out grey);
+        alpha = (157f / 255f);
     }
 
     private void updateWeekData()
@@ -43,6 +51,7 @@ public class ScheduleManager : MonoBehaviour
         if (schoolWeekIndex <= 4) return;
         schoolWeekIndex -= 1;
         updateWeekData();
+        highlightCurrentDay();
     }
 
     public void IncrementWeekIndex()
@@ -50,5 +59,16 @@ public class ScheduleManager : MonoBehaviour
         if (schoolWeekIndex >= 8) return;
         schoolWeekIndex += 1;
         updateWeekData();
+        highlightCurrentDay();
+    }
+
+    private void highlightCurrentDay()
+    {
+        if (schoolWeekIndex == 5) todaysBackground.color = orange;
+        else
+        {
+            grey.a = alpha;
+            todaysBackground.color = grey;
+        }
     }
 }

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Day: 2
   Date: 22-12
-  coursesToday: []
+  coursesToday:
+  - {fileID: 11400000, guid: f13fe29bc61950e4ba2cbd634003250b, type: 2}
+  - {fileID: 11400000, guid: 237054ab54973704395bb40490427d24, type: 2}

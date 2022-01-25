@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80e0e8bb6a0a2754eb674c427f5bdbb7, type: 3}
-  m_Name: UI-UX Advanced Lecture
+  m_Name: General Info Y3-Y4
   m_EditorClassIdentifier: 
-  CourseName: UI/UX Advanced
-  TeacherCode: 3
+  CourseName: General Info Y3/Y4
+  TeacherCode: 0
   ClassType: 0
-  TimeFrame: 09.15 - 11.00
-  Location: Online
+  TimeFrame: 
+  Location: 

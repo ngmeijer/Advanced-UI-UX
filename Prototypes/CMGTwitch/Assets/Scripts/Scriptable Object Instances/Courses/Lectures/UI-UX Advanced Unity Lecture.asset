@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5cb777112f50f941a467d25f9b08464, type: 3}
-  m_Name: Friday-24-12
+  m_Script: {fileID: 11500000, guid: 80e0e8bb6a0a2754eb674c427f5bdbb7, type: 3}
+  m_Name: UI-UX Advanced Unity Lecture
   m_EditorClassIdentifier: 
-  Day: 4
-  Date: 24-12
-  coursesToday:
-  - {fileID: 11400000, guid: aaa2c0ed7c7e17946827a96d592ef35e, type: 2}
-  - {fileID: 11400000, guid: fe6cee20ab303794b8712fb67c4835e8, type: 2}
+  CourseName: UI-UX Adv. Unity
+  TeacherCode: 5
+  ClassType: 0
+  TimeFrame: 09.15 - 11.00
+  Location: Online

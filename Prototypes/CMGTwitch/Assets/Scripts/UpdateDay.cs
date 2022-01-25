@@ -100,10 +100,11 @@ public class UpdateDay : MonoBehaviour
 
     private void AddCourseInstances()
     {
+        Debug.Log(todaysProperties);
         foreach (SO_Course courseInstance in todaysProperties.coursesToday)
         {
             if (coursePrefab == null) loadPrefab();
-            
+
             float yPos = calculateVerticalOffset(courseInstance.TimeFrame);
             
             Debug.Assert(coursePrefab != null,$"{courseInstance.CourseName}, {todaysProperties.Date}");

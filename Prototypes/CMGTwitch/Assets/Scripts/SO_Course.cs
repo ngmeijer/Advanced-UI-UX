@@ -9,6 +9,8 @@ public enum E_TeacherCode
     DVA06,
     AMO02,
     TRO02,
+    YRE03,
+    JB018
 }
 
 [Serializable]
@@ -24,6 +26,6 @@ public class SO_Course : ScriptableObject
     public string CourseName;
     public E_TeacherCode TeacherCode;
     public E_ClassType ClassType;
-    public string TimeFrame;
-    public string Location;
+    public string TimeFrame = "";
+    public string Location = "";
 }
