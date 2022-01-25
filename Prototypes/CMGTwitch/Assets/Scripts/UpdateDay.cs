@@ -24,7 +24,8 @@ public class UpdateDay : MonoBehaviour
     private void loadPrefab()
     {
         coursePrefab =
-            (GameObject) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/CourseInstance.prefab", typeof(GameObject));
+            (GameObject) Resources.Load("CourseInstance");
+        Debug.Log(coursePrefab);
     }
 
     public void ChangeData(SO_Day pDay_SO)
